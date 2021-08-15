@@ -12,7 +12,10 @@ def index(request):
 
 
 def products(request):
-    context = {'title': 'GeekShop - Каталог'}
+    context = {
+        'title': 'GeekShop - Каталог',
+        'products': data_prod
+    }
     return render(request, 'products/products.html', context)
 
 
