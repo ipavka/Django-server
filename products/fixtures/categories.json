@@ -1,0 +1,34 @@
+[
+{
+  "model": "products.productcategory",
+  "pk": 5,
+  "fields": {
+    "name": "Одежда",
+    "description": "Что то..."
+  }
+},
+{
+  "model": "products.productcategory",
+  "pk": 6,
+  "fields": {
+    "name": "Обувь",
+    "description": "Что то о обуви"
+  }
+},
+{
+  "model": "products.productcategory",
+  "pk": 7,
+  "fields": {
+    "name": "Рюкзаки",
+    "description": "Самые крутые Рюкзаки..."
+  }
+},
+{
+  "model": "products.productcategory",
+  "pk": 8,
+  "fields": {
+    "name": "Купальники",
+    "description": "Пойдем купаться..."
+  }
+}
+]
