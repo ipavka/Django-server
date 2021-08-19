@@ -1,10 +1,6 @@
 from django.shortcuts import render
-import json
 from datetime import datetime
-
-# не знаю как верно, тут оставить или в функции разместить
-with open('./products/fixtures/products.json', 'r', encoding='utf-8') as file:
-    data_prod = json.load(file)
+from products.models import Product, ProductCategory
 
 
 def index(request):
@@ -18,7 +14,8 @@ def products(request):
     context = {
         'title': 'geekShop - Каталог',
         "date": datetime.now(),
-        'products': data_prod
+        'products': Product.objects.all(),
+        'categories': ProductCategory.objects.all()
     }
     return render(request, 'products/products.html', context)
 
